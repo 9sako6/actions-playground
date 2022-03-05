@@ -8,6 +8,8 @@ jobs:
 
       # Make changes to pull request here
       - run: |
+          git config --local user.email "noreply@github.com"
+          git config --local user.name "GitHub"
           touch hello.txt
           git switch -c example-patches
           git add hello.txt
